@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url(/bg.jpg); /* Assuming you have a background image */
+  background: url(https://github.com/Dharmub376/Translation-App/blob/main/bg.jpg?raw=true); /* Assuming you have a background image */
   background-size: cover;
 }
 
