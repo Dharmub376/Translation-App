@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set, compatibility, and viewport -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <!-- Link to external icon font library -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Title of the document -->
+    <title>Translate</title>
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Heading -->
+        <h1>Translate</h1>
+        <!-- Wrapper for input elements -->
+        <div class="wrapper">
+            <!-- Text input fields -->
+            <div class="text-input">
+                <!-- Textarea for input text with placeholder -->
+                <textarea class="from-text" placeholder="Enter text"></textarea>
+                <!-- Textarea for translation output with placeholder, readonly, and disabled attributes -->
+                <textarea class="to-text" placeholder="Translation" readonly disabled></textarea>
+            </div>
+
+            <!-- Controls section -->
+            <ul class="controls">
+                <!-- Source language selection -->
+                <li class="row from">
+                    <!-- Icon set for source language selection -->
+                    <div class="icons">
+                        <i id="from" class="bx bxl-flask" alt="Source Language"></i>
+                        <i id="from" class="bx bxs-copy-alt" alt="Copy Source"></i>
+                    </div>
+                    <!-- Dropdown for selecting source language -->
+                    <select>
+                    </select>
+                </li>
+                <!-- Exchange button for swapping source and target languages -->
+                <li class="exchange"><i class="bx bx-repost" alt="Swap Languages"></i></li>
+                <!-- Target language selection -->
+                <li class="row to">
+                    <!-- Dropdown for selecting target language -->
+                    <select>
+                    </select>
+                    <!-- Icon set for target language selection -->
+                    <div class="icons">
+                        <i id="to" class="bx bxl-flask" alt="Target Language"></i>
+                        <i id="to" class="bx bxs-copy-alt" alt="Copy Target"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Button for initiating translation -->
+        <button>Translate</button>
+    </div>
+</body>
+<!-- Scripts for functionality -->
+<script src="js/countries.js"></script>
+<script src="js/script.js"></script>
+
+</html>

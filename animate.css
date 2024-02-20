@@ -1,0 +1,44 @@
+/* Animating the container */
+.container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animating the translate button */
+.container button {
+    transition: all 0.3s ease;
+}
+
+.container button:hover {
+    transform: scale(1.05);
+}
+
+/* Animating the exchange icon */
+.controls .exchange {
+    cursor: pointer;
+}
+
+.controls .exchange:hover {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+/* Animating the icons */
+.controls .icons i {
+    transition: all 0.3s ease;
+}
+
+.controls .icons i:hover {
+    transform: scale(1.2);
+    color: #ff7f50; /* Change color as per your preference */
+}
